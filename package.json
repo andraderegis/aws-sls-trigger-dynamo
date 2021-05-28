@@ -7,8 +7,10 @@
   "license": "MIT",
   "scripts": {
     "deploy": "sls deploy -v",
-    "invoke:local": "sls invoke local -f heroes-insert --path mocks/heroes-insert.json",
-    "invoke": "sls invoke -f heroes-insert --path mocks/heroes-insert.json"
+    "invoke:heroes-insert:local": "sls invoke local -f heroes-insert --path mocks/heroes-insert.json",
+    "invoke:heroes-insert": "sls invoke -f heroes-insert --path mocks/heroes-insert.json",
+    "invoke:heroes-trigger:local": "sls invoke local -f heroes-trigger --path mocks/heroes-trigger.json",
+    "invoke:heroes-trigger": "sls invoke -f heroes-trigger"
   },
   "dependencies": {
     "@hapi/joi": "^17.1.1",
