@@ -1,5 +1,19 @@
 {
+  "name": "trigger-dynamo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/andraderegis/aws-sls-trigger-dynamo.git",
+  "author": "Reginaldo Andrade <reginaldo.andrade@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "sls deploy -v",
+    "invoke:heroes-insert:local": "sls invoke local -f heroes-insert --path mocks/heroes-insert.json",
+    "invoke:heroes-insert": "sls invoke -f heroes-insert --path mocks/heroes-insert.json",
+    "invoke:heroes-trigger:local": "sls invoke local -f heroes-trigger --path mocks/heroes-trigger.json",
+    "invoke:heroes-trigger": "sls invoke -f heroes-trigger"
+  },
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
     "aws-sdk": "^2.917.0",
     "uuid": "^8.3.2"
   }

@@ -1,0 +1,40 @@
+{
+  "Records": [
+    {
+      "eventID": "1fdff5cefb59c67136ebc1385e45a7d1",
+      "eventName": "INSERT",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "ApproximateCreationDateTime": 1622214335,
+        "Keys": {
+          "name": {
+            "S": "Cloud Strife"
+          },
+          "id": {
+            "S": "bfe9c803-92ab-4bc7-b93e-d81b27a2b898"
+          }
+        },
+        "NewImage": {
+          "createdAt": {
+            "S": "2021-05-28T15:05:35.101Z"
+          },
+          "name": {
+            "S": "Cloud Strife"
+          },
+          "id": {
+            "S": "bfe9c803-92ab-4bc7-b93e-d81b27a2b898"
+          },
+          "power": {
+            "S": "Swordman"
+          }
+        },
+        "SequenceNumber": "172500000000012577818006",
+        "SizeBytes": 154,
+        "StreamViewType": "NEW_AND_OLD_IMAGES"
+      },
+      "eventSourceARN": "arn:aws:dynamodb:us-east-1:609157373734:table/Heroes/stream/2021-05-28T14:27:45.733"
+    }
+  ]
+}
